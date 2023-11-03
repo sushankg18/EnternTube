@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/**************************************************************************************/
+/************************  HEADER STARTS FROM HERE  *****************************/
+/**************************************************************************************/
+
+.header {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px 20px 20px 20px;
+    background-color: black;
+}
+
+/***********  HEADER LOGO's   *******************/
+
+
+.yt-logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+.menu-bar {
+    width: 25px;
+    cursor: pointer;
+}
+
+.search-bar {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 550px;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 3px;
+    padding-left: 20px;
+}
+
+.search-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.voice-icon {
+    width: 15px;
+    cursor: pointer;
+}
+
+.create-icon {
+    width: 27px;
+    cursor: pointer;
+}
+
+.notification-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+.search-bar::placeholder {
+    font-size: 18px;
+}
+
+.search-bar:focus {
+    outline: none;
+    color: rgb(245, 244, 244);
+    font-size: 18px;
+}
+
+/*********** LEFT SECTION    *******************/
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/***********  MIDDLE SECTION  *******************/
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.middle-left {
+    border: 0.2px solid rgb(96, 96, 96);
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    background-color: #363535;
+    padding-left: 1px;
+    cursor: pointer;
+}
+
+.search-icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.middle-right {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding-top: 5px;
+    background-color: #363535;
+    cursor: pointer;
+}
+
+.middle-right:hover {
+    background-color: #444444;
+}
+
+/***********  RIGHT SECTION  *******************/
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/************************  HEADER ENDS HERE  *****************************/
+
+
+
+
+
+/**************************************************************************************/
+/************************  BELOW HEADER STARTS FROM HERE  *****************************/
+/**************************************************************************************/
+
+.lower {
+    width: 100%;
+    display: flex;
+}
+
+.sidebar {
+    width: 14%;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+    width: 5px;
+    background: white;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: gray;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(215, 214, 214);
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar h4 {
+    color: white;
+    font-weight: normal;
+}
+
+.sidebar div {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.sidebar div:hover {
+    background-color: rgb(43, 42, 42);
+}
+
+.subscriptions {
+    margin-bottom: 20px;
+}
+.active-home{
+    background-color: rgb(43, 42, 42);
+}
+.library {
+    margin-top: 20px;
+}
+
+.your-clips img {
+    transform: rotate(90deg);
+}
+
+.show-more {
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    margin: 15px 16px;
+    color: white;
+}
+
+hr {
+    /***** HERE IT IS HORIZONTAL LINE IN THE SIDEBAR  *****/
+    border: none;
+    border-top: 0.4px solid #363535;
+    margin: 10px 0;
+}
+
+
+.middle-section {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+
+
+
+.main {
+    width: 86%;
+    height: 100%;
+    color: white;
+    float: left;
+    position: relative;
+    left: 14%;
+    padding: 10px;
+}
+
+.category{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    position: fixed;
+    top: 10%;
+    background-color: black;
+    z-index: 5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.all{
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    padding: 5px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+.all:hover{
+    background-color: rgb(73, 73, 73);
+}
+.active{
+    background-color: white;
+    color: black;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 403px;
+    height: 350px;
+    cursor: pointer;
+    margin-right: 13px;
+    margin-bottom: 20px;
+}
+.thumbnail img{
+    width: 400px;
+    border-radius: 14px;
+}
+.video-info{
+    display: flex;
+    padding-top: 10px;
+}
+.channel-profile img{
+    width: 40px;
+    border-radius: 50%;    
+}
+.channel-info{
+    padding-left: 10px;
+}
+.title{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.channel-name,.time{
+    color: rgb(214, 214, 214);
+}
